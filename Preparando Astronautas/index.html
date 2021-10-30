@@ -1,0 +1,723 @@
+<!--
+
+    <form>
+
+        - Elemento que definirá um formulário
+        - É um container estilo <section> <footer>
+
+        Atributos básicos
+        - action
+        - method
+
+        <form action="" method="GET">
+
+        </form>
+
+
+-->
+
+<!--
+
+    <fieldset>
+
+        - Agrupamentos de Campos
+        - Mesmo propósito
+        - Semântico
+        - Acessibilidade
+
+        Atributos Especiais
+
+        - Disabled
+            - Desabilita todos elementos internos
+            - Não serão enviados ao submeter o formulário
+        - form
+            - O id de um formulário no qual um fieldset pertence
+            - Não precisa estar dentro do formulário
+        - name
+            - Nome do grupo
+        - <legend>
+            - Nome do agrupamento
+            - primeiro elemento do fieldset
+
+            <form id="contato"action="">
+    
+            </form>
+
+            <fieldset form="contato" name="contact-agrupament" title="Input">
+
+                <legend>Contato</legend>
+                <input type="text">
+
+            </fieldset>
+
+-->
+
+<!--
+    <label>
+
+        - Associar e identificar uma (ou mais) tags de entrada de dados
+        - Acessibilidade
+        - Você poderá clicar para mudar o foco da entrada de dados
+
+        Atributos
+            - for
+                - para fazer conexão entre este label e a tag de entrada de dados
+                - é feita via id do input
+                - só funciona com elementos especificos
+                    - button, input (not hidden), output, meter, progress, select, textarea
+
+                    <label>
+                        Nome: 
+                        <input type="text">
+                    </label>
+
+
+                    ou &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+                    <label for="sobrenome">Sobrenome</label>
+                    <input id="sobrenome" type="text">
+
+
+-->
+
+<!--
+
+    <button>
+
+        - Representa um botão
+        - envia Formulários
+        - É estilizado pelo user agent
+
+    - Atributos
+        → type
+            * submit
+            * reset
+            * button 
+        → autofocus
+        → disabled
+        → name
+        → value
+        → form
+
+        <form action="" id="meu-form"></form>
+        <button
+          name="button"
+          value="Alguma-Coisa"
+          type="menu"
+          form="meu-form">
+          
+          Enviar
+        
+        </button>
+
+-->
+
+<!--
+
+
+    <datalist>
+
+        - Lista de valores como uma sugestão a tag input
+        - Valores sugestivos e não obrigatórios
+        - Usuários poderão selecionar os valores, ou colocar um
+
+
+        # list
+
+        → Recebe como valor o id de "<datalist>" de um mesmo documento
+
+        # Tipos de input suportados
+
+        - text,search,url,tel,email,date,month,week,time,
+        datetime-local,number,range e color
+
+        * Valores não compativeis de <datalist> não serão apresentados.
+
+
+        # Tipo não suportados
+
+        - hidden,password,checkbox,radio,file ou qualquer
+        tipo de button
+
+
+
+<input 
+type="text"
+list="fruits-data"
+placeholder="Escolha uma Fruta"
+>
+
+<datalist id="fruits-data">
+    <option>Orange</option>
+    <option>Banana</option>
+    <option>Pineapple</option>
+</datalist>
+
+<datalist id="colorsdata">
+    <option>#ff0000</option>
+    <option>#0000ff</option>
+    <option>#00ff00</option>
+    <option>#fff000</option>
+</datalist>
+
+<input type="color" list="colorsdata">
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="meu-form" action="" method="GET">
+        <fieldset></fieldset>
+
+    </form>
+
+
+
+    <script src="java.js"></script>
+</body>
+</html>
+
+
+
+<form id="meu-form" action="" method="GET" >
+    
+</form>
+
+<fieldset name="contatos" form="meu-form"> 
+    <legend>Contato</legend>
+
+    <label for="">
+        Nome:
+        <input type="text">
+    </label> <br>
+
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text">
+
+    <button
+      autofocus
+      form="meu-form"
+      name="button"
+      value="alguma"
+      type="reset"
+      >Enviar</button>
+
+
+
+</fieldset>
+
+<input 
+type="text"
+list="fruit-data"
+placeholder="Escolha uma fruta">
+
+<datalist id="fruit-data">
+    <option value="Orange"></option>
+    <option value="Banana"></option>
+</datalist>
+
+
+
+
+<input>
+    Atributos
+        → type
+        → name   (Ajuda no Back-End)
+        → id
+        → autocomplete
+        → autofocus  (Um por página)
+        → value   
+        → readonly
+        → required   (O campo que tem esse atributo, precisa ser preenchido)
+        → placeholder
+
+
+
+<input id="nome1" type="text" name="nome" autocomplete="nickname">
+<input type="text" autofocus value="Alguma coisa" required>
+<input type="email" placeholder="Digite seu Email">
+
+-->
+
+
+<!--
+
+    input do Type Password
+
+    Atributos
+            - type="password"
+            - minlength="4"
+            - maxlength="8"
+            - size="15"
+            - placeholder="Digite sua senha"
+            - autocomplete="new-password" ou "on" ou "off"
+            - pattern="[0-9a-fA-F]{4,8}"
+            - inputmode="numeric"
+            - readonly
+            - disabled
+            - required
+
+
+
+<form action="">
+
+<input
+  type="password"
+  minlength="4"
+  maxlength="8"
+  size="15"
+  placeholder="Digite sua senha"
+  autocomplete="new-password"
+  pattern="[0-9a-fA-F]{4,8}"
+  inputmode="numeric"
+
+  > <button type="submit">Enviar</button>
+
+  </form>
+
+-->
+
+<!--
+
+    input type Email
+
+    Atributos
+
+        - readonly / disabled
+        - placeholder / value
+        - multiple  → Aceita vários Emails
+        - pattern=".+@rocketseat\.com\.br"  → só é enviado se o dominio for igual ao do pattern
+        - minlength / maxlength
+        - size
+        - list
+
+
+<form action="">
+
+    <datalist id="emaillist">
+        <option value="mayk@rocketseat.com.br"></option>
+    </datalist>
+
+    <input list="emaillist" type="email"
+    pattern=".+@rocketseat\.com\.br"
+    
+    >
+    <button type="submit">Enviar</button>
+
+</form>
+
+
+<table>
+
+    <colgroup>
+      <a href="/index.html">  <col span="1" style="background-color: blue;"> </a>
+        <col span="2" style="background-color: red;">
+        <col span="2" style="background-color: green;">
+    </colgroup>
+
+<thead>
+    <caption>Magalu x Edmil</caption>
+    <tr>
+        <th></th>
+        <th colspan="2">Magalu</th>
+        <th colspan="2">Edmil</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <th></th>
+    <th><a href="https://instagram.com" target="_self">Vendidos</a></th>
+    <th>Entregues</th>
+    <th>Vendidos</th>
+    <th>Entregues</th>
+    </tr>
+
+    <tr>
+        <th>Vassoura</th>
+            <td>20</td>
+            <td>40</td>
+            <td>20</td>
+            <td>40</td>
+    </tr>
+</tbody>
+<tfoot>
+    <th>Total:  </th>
+    <input type="file">
+    <td>60</td>
+</tfoot>
+
+</table>
+
+
+
+<form id="meu-form" action="" method="GET">
+    
+
+</form>
+
+<fieldset form="meu-form" name="">
+
+
+    <legend>Contato</legend>
+
+    <label for="name">Nome:</label>
+    <input id="name" type="text" list="fruitlist" placeholder="Frutas">
+    <button  type="submit" form="meu-form">Enviar</button>
+ 
+    <datalist id="fruitlist">
+        <option value="banana"></option>
+        <option value="laranja"></option>
+    </datalist>
+
+
+    <input
+      type="text"
+      id="in01"
+      name="Entrada"
+      value=""
+      autofocus
+      autocomplete="Coisa"
+      readonly
+      required
+      placeholder="ALSLFSAL"
+      >
+
+      <input type="password" minlength="4" maxlength="8" size="10" inputmode="numeric">
+
+      <input type="email" multiple pattern=".+@gmail\.com" list="emailist">
+
+      <datalist id="emailist">
+          <option value="thomasdixini@gmail.com"></option>
+      </datalist>
+</fieldset>
+
+
+
+<form action="">
+
+    <input 
+    type="url"
+    placeholder="https://example.com"
+    size="15"
+    required
+    list="urlist"
+    spellcheck="true"
+    pattern=".*\.com\.br.*"
+    title="Somente dominios .com .br"
+    > 
+
+    <datalist id="urlist">
+        <option value="https://meusite.com.br"></option>
+        <option value="https://meussitse.com.br"></option>
+    </datalist>
+    <button type="submit">Enviar</button>
+
+</form>
+
+
+
+<form action="" method="POST" enctype="multipart/form-data">
+
+    <input
+    type="file"
+    accept="image/*"
+    value=""
+    multiple>
+
+
+</form>
+
+
+
+<input type="color">
+
+ Elemento para selecionar cor
+ Color Picker
+
+ #Atributos
+    - value
+    - list
+
+<datalist id="colordata">
+    <option value="#ff0000"></option>
+</datalist>
+
+<input type="color" list="colordata" value="#ff00FF">
+
+
+<input type="checkbox">
+
+- Caixas que podem ser marcadas 
+- Selecionar um valor para ser enviado
+- Se não selecionado, não será enviado nenhum dado.
+
+#Atributos
+- Globais
+- Value
+- Checked
+
+
+
+<fieldset>
+    <legend>Choose your Interests</legend>
+<div>
+    <input type="checkbox" id="coding" name="interest" value="coding" checked>
+    <label for="coding">Coding</label>
+</div>
+<div>
+    <input type="checkbox" id="music" name="interest" value="music">
+    <label for="music">Music</label>
+</div>
+    
+
+</fieldset>
+
+
+
+<input type="hidden" id="today" name="date"  value="01/10/2021">
+
+- Invisivel ao Usuário
+- Será enviado com o formulário 
+- Não receberá foco 
+- Leitores de tela não percebem esse foco
+
+<!-- É enviado para o backend  date=01/10/2021-->
+
+<!--
+
+Ele foi projetado para selecioanr uma unica opção de um grupo de opções
+
+- Atributos essenciais
+
+→ checked
+→ value
+
+
+
+<fieldset>
+    <legend>Bora tomar um Coffee?</legend>
+
+    <label for="sim">Sim</label> 
+    <input type="radio" id="sim" name="coffee" value="yes"> <br>
+
+    <label for="nao">Não</label>
+    <input type="radio" name="coffee" id="nao" value="no"> 
+
+</fieldset>
+
+-->
+
+<!-- 
+
+    <textarea>
+
+        - Mais de uma linha 
+        - Útil para textos grandes
+
+    Atributos
+    - id
+    - name
+    - rows e cols
+    - maxlenght e minlength
+    - wrap
+    .. e outros comuns igual o dos inputs,
+    placeholder,disabled,required,readonly,form
+    autocomplete, autofocus ..
+
+
+<textarea 
+name="vai-para-o-backend" 
+id="" 
+cols="15" 
+rows="5"
+minlength="4"
+maxlength="30"
+wrap="off"
+></textarea>
+
+    -->
+
+<!--
+
+    <select>
+
+        - Controle que fornece um menu de opções
+
+    <option>
+
+        - Contém as opções a serem selecionadas
+        - Atributos necessários
+            → value
+
+    ATRIBUTOS UNICOS
+    - multiple
+        → Habilita a selecionar várias opções
+    - size
+        → Quantas opções visiveis
+
+
+<label for="carselect">Selecione um modelo</label>
+<select name="carmodel" id="carselect" size="2" multiple>
+    <option value="">Carros</option>
+    <option value="fiat">toro</option>
+    <option value="bmw">X6</option>
+</select>
+
+-->
+
+<!--
+
+    <optgroup>
+
+
+<label for="pets-table">Choose one or more pets: </label>
+    <select name="pets" id="pets-table">
+        <optgroup label="4-legged pets">
+            <option value="dog">Dog</option>
+            <option value="cat">Cat</option>
+            <option value="hamster" disabled>Hamster</option>
+        </optgroup>
+        <optgroup label="Flying Animals" >
+            <option value="bird">Bird</option>
+            <option value="Hawk">Hawk</option>
+        </optgroup>
+    </select>
+
+-->
+
+
+
+<!--
+
+    <input type="search">
+
+
+    #ATributos 
+
+    - list
+    - pattern
+    - aria-label     -> acessibilidade
+
+    <form action="">
+
+    <datalist id="searchitems">
+        <option value="mac"></option>
+        <option value="Wind"></option>
+        <option value="Linux"></option>
+    </datalist>
+
+    <input type="search" name="q" list="serchitems"
+    placeholder="Digite sua busca" size="29"
+    aria-label="Campo de pesquisa: Digite sua busca"
+    pattern="[0-9]{2}"
+    title="Digite o número do ID: 99"
+    > 
+    <button> Enviar</button>  
+
+</form>
+
+
+-->
+
+<!-- 
+    <input type="number">
+
+    Entrada de números
+
+    #atributos
+
+    - min/max
+    - step  -L Pula de acordo com a quantidade,
+    exemplo: se o valor for de 10, vai pular de 10 em 10
+
+
+
+<input type="number" name="" id="" step="10" min="2" max="8">
+
+-->
+
+<!--
+
+    <input type="range">
+
+    #Atributos
+
+    - min/max 
+    - step
+
+
+<input type="range" min="1" max="10" step="2">
+
+--> 
+
+<!-- 
+    Inputs do tipo Data 
+
+    types: 
+
+    - date
+    - datetime-local
+    - month
+    - week
+
+
+<input type="date" name="" id="" value="2017-12-20">
+<input type="datetime-local">
+<input type="month" name="" id="">
+<input type="week" name="" id="">
+
+-->
+
+<!--
+
+    Desenhando
+
+    - Pensar nos requisitos
+    - Ajuda a definir as necessidades
+
+    Dicas: 
+    → Simples e focado
+    → Somente dados necessários
+    → Verifique oque te agrada
+-->
+
+
+<form action="" method="GET" id="contact">
+
+</form>
+
+<fieldset form="contact">
+    <legend>Contato</legend>
+
+    <label for="name">Nome: </label> <br>
+    <input type="text" name="name" id="name" title="Digite seu nome"> <br>
+    <br>
+
+
+    <datalist id="emailist">
+        <option value="maykbrito@rocketseat.com.br"></option>
+        <option value="thomasdixini@gmail.com"></option>
+    </datalist>
+
+    <label for="email-box">Email:</label> <br>
+    <input type="email" id="email-box" multiple pattern=".+@rocketseat\.com\.br" list="emailist">
+    <br>
+    <br>
+
+    <label for="message">Mensagem:</label> <br>
+    <textarea name="" id="" cols="20" rows="7" ></textarea>
+    <br>
+ 
+    <button type="submit" form="contact">Enviar</button>
+</fieldset>
+
+
+
+

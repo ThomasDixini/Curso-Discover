@@ -1,0 +1,238 @@
+
+/*
+    - 01 Aula -
+
+    Comentários
+
+*/
+
+/*
+    - 02 Aula -
+
+
+        (Selector)
+            ↓
+            h1 {
+
+              (Properties)  (Value)         |
+                  ↓     ↓------|            |
+                color: blue;                | ----- → Description
+                font-size: 60px;            |
+                background-color: gray;     |
+            }
+
+            * Selector
+            * Description
+            * Properties
+            * Values
+
+*/
+
+/*
+
+    - 03 Aula - 
+
+    Selectors
+        # Conecta os elementos HTML com CSS
+
+    Tipos:
+        - Global Selectors: '*'
+        - Element/Type selector: 'h1','h2','p',etc ...
+        - ID selector: ' #box, #container, etc ... '
+        - Class Selector: ' .m-40, .dino, etc ... '
+
+        * {
+             margin: 0px;         → Global
+        }
+
+        h1, h2 {
+            color: red;
+            font-size: 60px;               → Element/Type
+            background-color: gray;
+        }
+
+        #container {
+            width: 200px;               → ID
+        }
+
+        .dino {
+            margin: 40px;               → Class
+        }
+
+        */
+
+/*
+
+    - 04 Aula -
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap');
+
+p {
+    color: red;
+    font-family: 'Oswald', sans-serif;
+}
+
+strong {
+
+    background-color: blue;
+}
+
+*/
+
+/*
+ - 05 Aula - 
+
+ In line > Tag Style > Link 
+
+
+*/
+
+/*
+ - 06 Aula - 
+
+ Seletor Global = 0   {*}
+ Element Selector or Pseudo Element = 1   {h1,p,strong,etc..}
+ Class Selector = 10    .<nome-da-classe.
+ ID Selector = 100    #<nome-do-ID>
+ In Line = 1000
+*/
+
+/*
+
+ - 07 Aula - 
+
+ !important 
+
+ Sobrescreve o efeito cascata 
+ Ignorando qual é mais forte, como in line , ou <style>
+
+ */
+
+ /*
+
+  - 08 Aula - 
+
+    At Rules  (At == @)
+
+  * Comportamento do CSS
+  * Começa com o '@' seguido de identificador e valor
+
+  Exemplos:
+
+    → @import      /* Inclui um CSS externo 
+
+    → @media        /* Regras Adicionais para Dispositivos
+
+    → @font-face        /* Fontes Externas
+
+    → @keyframes        /* Animation
+
+*/
+
+/*
+
+ - 09 Aula - 
+
+    Shorthand
+
+    *Junção de propriedades
+    *Resumo
+    *Legível
+
+
+    font {
+        font-style:italic;
+        font-weight: bold;
+        font-size: .8em;
+        font-family: Arial, sans-serif;
+
+    }
+        Font Shorthand
+              ↓
+        font: italic bold .8em Arial, sans-serif;
+
+        A ordem dos valores NÃO IMPORTA.
+
+
+
+        Para mais Short Hands:
+        https://developer.mozilla.org/pt-BR/docs/Web/CSS/Shorthand_properties
+
+
+        Exemplo:
+        h1 {
+                 font:italic bold .8em Arial, sans-serif;
+             }
+
+*/
+
+
+/* 
+
+  - 10 Aula -
+
+             Fuções
+
+    * exemploFunction();
+    * Recebe argumentos. (Oque está entre patenteses)
+
+                    Argumento
+                |        ↓        |
+    @import url(https://google.com);
+
+
+
+              Argumento
+{          |      ↓     |
+    color: rgb(255,0,220);
+    width: calc(100% - 10px);
+}
+
+
+*/
+
+/* 
+
+ - 11 Aula - 
+
+    Vendor Prefixes
+
+    Permite que os browsers adicione 'features'
+    a fim de colocar em uso alguma novidade do CSS
+
+    # Exemplo
+
+    '''CSS
+
+    p {
+        -webkit-background-clip: text;  (Chrome, IOS , Safari, Android )
+        -moz-background-clip: text;     (Mozilla)
+        -ms-background-clip: text;       (Microsoft Edge)
+        -o-background-clip: text;       (Opera)
+
+    }
+
+    Consultas:
+    https://ireade.github.io/which-vendor-prefix
+    https://caniuse.com
+
+*/
+
+
+
+
+
+Fazer conta no LINKEDIN E olhar oque as empresas procuram.
+Executar metodologias de estudo para Aprender com mais eficiência.
+Metodo Pomodoros e Feynman
+
+Estudar 
+
+ - todos os dias Programação e Desenho
+ - 1 Dia Sim e 1 dia não ler Livros Didáticos da Faculdade
+ - 1 Dia sim e 1 Dia não praticar Inglês.
+
+ ----→ Criar um intagram para postar meus projetos e estudos de programação e para as empresas 
+ terem mais visibilidade de quem eu sou e o que eu faço.

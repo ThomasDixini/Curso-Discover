@@ -1,0 +1,15 @@
+p::before{
+    content: "<<<<<"
+}
+
+p::after{
+    content: "<<FIM<<"
+}
+
+p::first-line{
+    background-color: #999;
+}
+
+p:nth-of-type(3)::first-line{
+    background-color: #ddd;
+}

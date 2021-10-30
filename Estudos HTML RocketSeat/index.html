@@ -1,0 +1,883 @@
+<!--
+
+   -- Aula 01 -- 
+
+   HTML: HyperText Markup Language
+   Linguagem de Marcação de Texto
+
+   Obs -> Não é uma linguagem de programação, mas sim~
+   uma linguagem por seu jeito de escrever
+   (Sintaxe, Semântica , etc)
+
+-->
+
+<!--
+    -- Aula 02 --
+
+    Anatomia das Tags
+
+
+                            EXEMPLOS
+    - Abertura da Tag -> <h1>
+    - Fechamento da Tag -> </h1>
+    - Conteúdo da Tag ->
+     <h1> 
+         ""CONTEÚDO(é o que há dentro)""
+     </h1>
+     - Elemento
+     <h1>              |
+         "CONTEUDO"    | > ELEMENTO(Tudo isso)
+     </h1>             |
+
+
+     Existem também Elementos Vazios, Exemplos:
+
+     <img src="" alt="" >
+     <input type="text">
+-->
+
+<!--
+    -- Aula 03 --
+
+    Atributos HTML
+    - Informações Extras
+    - Configurações
+
+    Exemplo:
+
+        Um Atributo/Outro Atributo
+             ↓        ↓
+    <img (src="") (alt="")>
+
+    Podem ter valores Booleanos
+
+                    Não precisa do =""
+                    Atributo Booleano
+                          ↓
+    <input type="text" disable>
+
+
+-->
+
+<!--
+    -- Aula 04 --
+
+    Atributos Globais
+
+    - class
+    - contenteditable
+    - tabindex
+    - data-*
+    - id
+    - hidden
+    - title
+    - style
+
+
+
+
+<div class="dino" id="din1" tabindex="3" style="color: rgb(112, 131, 8);">
+    <h1>Conteudo</h1>
+    <h2>Conteudo</h2>
+    <h3>Conteudo</h3>
+</div>
+
+<div class="dino" id="din2" data-qualquer-nome-aqui="">
+    <h1>Conteudo</h1>
+    <h2>Conteudo</h2>
+    <h3>Conteudo</h3>
+</div>
+
+<div class="dino" id="din3" tabindex="2" hidden >
+    <h1>Conteudo</h1>
+    <h2>Conteudo</h2>
+    <h3>Conteudo</h3>
+</div>
+
+-->
+
+<!--
+
+    -- Aula 05 --
+
+    Aninhamento das Tags
+
+    - Hierarquia
+    - Fluxo
+    - Posicionamento das Elementos
+
+
+
+
+<p> → Tag "Pai"                  |--
+                                 |
+    Alguma <em> coisa </em>aqui  |  Primeiro    |
+             ↓                   |              |
+            Tag "Filha"          |              |
+</p>                             |--            |
+                                 |              |
+<p>                              |--            |
+    Outra Coisa Aqui             |  Segundo     |→→→ Fluxo 
+</p>                             |--            |   As Tags
+                                 |              |    Seguem
+<p>                              |--            |     Ordem
+    Mais uma coisa aqui          |  Terceiro    |
+</p>                             |--            |
+
+-->
+
+
+<!--
+
+    -- Aula 06 --
+
+    Praticando 
+
+<p>
+    <h1><b> <em>Primeiro Páragrafo</em> </b></h1>
+    Este<strong> daqui vai ser </strong>o primeiro paragrafo<br>
+    da minha página html.Vou escrever pouca coisa!!
+</p>
+
+<p>
+    <h4>Segundo Páragrafo</h4>
+    O segundo páragrafo vou escrever menos <br>
+    coisa ainda e ainda deixei o título para <br>
+    diferenciar do primeiro.
+    Segue o link do Google: <a href="https://google.com">Saiba Mais</a>
+</p>
+
+-->
+
+<!--
+
+    -- Aula 07 --
+
+    - Conteúdo do texto e 
+    Caracteres reservados
+
+    - Alguns deles:
+
+    → &quot;  Aspas duplas "
+    → &lt;  Menor que <
+    → &gt;  Maior que >
+    → &nbsp;  Esbaço "   "
+    → &amp; E comercial &
+
+        Testando
+<p>
+    
+    &nbsp; Só <br>
+    &quot;uma &lt;frase&gt; de &amp; teste.&quot;
+</p>
+
+-->
+
+<!--
+
+    -- Aula 08 --
+
+    Semântica
+
+    - Dar significado
+    - Elementos semânticos
+
+
+    Utilizar elementos que mais se adaptam ao que
+    eu vou fazer na minha página
+
+    Exemplos:
+
+    Será que oque eu vou fazer é páragrafo?
+    Utiliza a tag <p>
+
+    Oque eu vou fazer é um título?
+    Utilizar a tag <h1>
+
+        etc..
+     
+-->
+
+<!--
+
+    -- Aula 09 --
+
+    Cabeçalhos e Páragrafos
+
+
+<h1>Sobre mim</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+<p>Rerum quibusdam explicabo eaque accusamus, culpa iusto cumque ipsam laboriosam voluptatem aspernatur dolores saepe animi reiciendis ullam soluta reprehenderit. Voluptatum, repudiandae debitis.</p>
+
+<h2>Nascimento</h2>
+
+<h3>Infância</h3>
+
+<p>Rerum quibusdam explicabo eaque accusamus, culpa iusto cumque ipsam laboriosam voluptatem aspernatur dolores saepe animi reiciendis ullam soluta reprehenderit. Voluptatum, repudiandae debitis.</p>
+
+<h3>Juventude</h3>
+<p>Rerum quibusdam explicabo eaque accusamus, culpa iusto cumque ipsam laboriosam voluptatem aspernatur dolores saepe animi reiciendis ullam soluta reprehenderit. Voluptatum, repudiandae debitis.</p>
+
+<h2>Trabalho</h2>
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit.
+<p>Rerum quibusdam explicabo eaque accusamus, culpa iusto cumque ipsam laboriosam voluptatem aspernatur dolores saepe animi reiciendis ullam soluta reprehenderit. Voluptatum, repudiandae debitis.</p>
+
+<a href="">Saiba Mais.</a>
+
+-->
+
+<!--
+
+    -- Aula 10 --
+
+    Listas
+    
+    - Ordenadas  → <ol> </ol>
+    - Não Ordenadas  → <ul>  </ul>
+
+
+
+
+<h1>Bolo de Cenoura</h1>
+
+<h2>Ingredientes:</h2>
+
+        ORDENADAS
+            ↓
+
+<ol>
+    <li>2L de Leite</li>
+    <li>3 Ovos</li>
+    <li>5 Cenouras</li>
+    <li>200 ml de Fermento</li>
+    <li>3/2 de xícara de Granulado</li>
+</ol>
+
+
+      NÃO ORDENADAS
+            ↓
+<ul>
+    
+    <li>2L de Leite</li>
+    <li>3 Ovos</li>
+    <li>5 Cenouras</li>
+    <li>200 ml de Fermento</li>
+    <li>3/2 de xícara de Granulado</li>
+    
+
+</ul>
+
+-->
+
+<!--
+
+    -- Aula 11 --
+
+    Citações
+
+    - <blockquote>
+    - <cite>
+    - <q>
+
+
+
+<blockquote cite="https://google.com"><strong>O Elemento</strong> <code>&lt;blockquote&gt;</code>
+    (ou <em>HTML Block Quotation Element</em>) é utilizado para uma citação.</blockquote>
+
+
+<p> De acordo com <a href="https://google.com"><cite>Página</cite></a></p>
+
+<q cite="wafsdafsa">Saiba mais</q>
+
+&quot;
+
+-->
+<!--
+
+    -- Aula 12 --
+
+    Abreviações
+
+    - <abbr>
+
+    <p> Utilizado para <abbr title="Abre Viação">ABVC</abbr></p>
+-->
+
+<!--
+
+    -- Aula 13 --
+
+    Detalhes de Contato
+
+    - <adress>
+
+
+    <address>
+        <p>Mayk Brito<br>
+        <strong>Três Pontas, MG</strong>
+        </p>
+    </address>
+
+
+-->
+
+<!--
+
+        ____ PRATICANDO ____
+
+
+<h1>Bora lá</h1>
+
+<h2>Texto 01:</h2>
+
+<p>Aqui vai o <b><em>Texto 01</em></b> para testar tudo oque eu já aprendi
+com o curso do discover da rocket seat. Segue abaixo Uma lista</p>
+
+<ol>
+    <li> <q>HTML</q></li>
+    <li>SINTAXE</li>
+    <li>SEMÂNTICA</li>
+</ol>
+
+<h2>Texto 02:</h2>
+
+<p>Agora aqui vai o <b><em>Texto 02</em></b> e vou escrever qualquer 
+coisa aqui porque to sem criatividade</p>
+
+<ul>
+     
+    <li><cite>&lt;Página da Web&gt;</cite></li>
+    <li>&amp; protocolos <abbr title="HyperText Transfer Protocol">HTTPS:</abbr></li>
+</ul>
+
+<address>
+    <p>
+        Thomás Dixini<br>
+        <b>Três Pontas, MG</b>
+    </p>
+</address>
+
+<h2>Agora o Resto:</h2>
+
+<dl>
+    <dt>Atributos Globais</dt>
+    <dd class="dino">Class</dd>
+    <dd id="01">Id</dd>
+    <dd contenteditable="">Contenteditable</dd>
+    <dd tabindex="1">Tabindex</dd>
+    <dd hidden>Hidden</dd>
+    <dd style="font-size: larger;">style</dd>
+    <dd data-tipe="Alguma-coisa">data-*</dd>
+    <dd title="Title">title</dd>
+</dl>
+-->
+
+<!--
+
+    -- Aula 14 --
+
+    Representando Código no HTML
+
+    - <code>
+    - <pre>
+
+    <pre>
+        <code>
+            CARALHO.documento.window.alert("Carai")
+        </code>
+    </pre>
+
+
+
+-->
+
+<!--
+
+    -- Aula 15 --
+
+    Elementos Genéricos
+
+    - <div> → Para blocos
+    - <span> → Para linhas
+
+        Essencial para se usar no CSS e JS
+
+        <div class="bloco">
+            Isso aqui é um dos blocos
+        </div>
+
+        <span class="itens" id="1">Já Isso</span>
+        <span class="itens" id="2">&nbsp;é separado em linhas</span>
+
+
+-->
+
+<!--
+
+    -- Aula 16 --
+
+    HyperLinks → Tag âncora <a>
+
+        + Anatomia
+
+        + Atributos:
+        - Globais (Ex: class , title , id ...)
+        - href
+            - Para onde iremos.
+                - url completa
+                - fragmentos
+                - email
+                - telefone
+                - e outros
+        - dowload
+            - Baixa o contéudo da tag
+        -target
+            - _self (Se não colocar nada, ele envia o self por padrão)
+                - Muda a página sem abrir outra aba
+
+            - _blank (Muda de aba sem fechar a que estávamos)
+
+
+            Exemplo
+               ↓
+
+    <a href="https://google.com" download="">Google</a>
+-->
+<!--
+
+    -- Aula 17 --
+
+    Utilizando a Tag âncora
+
+    Exemplos
+       ↓
+
+        <p> <em>Encontre me </em></p>
+
+        <ul>
+            <li><a href="https://google.com">Google</a></li>
+            <li><a href="mailto:thomasdixini@gmail.com">Email</a></li>
+            <li><a href="tel:+5535997532401">Telefone</a></li>
+        </ul>
+
+
+    Exemplos com Fragmentos
+              ↓
+
+-----------------------------------------------------------------------------------------
+              <h1>Thomás Dixini</h1>
+
+<ul>
+    <li> <a href="#about">Sobre mim</a> </li>
+    <li><a href="#history">Minha História</a></li>
+    <li><a href="#work">Trabalho</a></li>
+</ul>
+
+
+<h2 id="about">Sobre Mim</h2>
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id voluptate autem velit ea consequuntur, nostrum ut omnis, ducimus voluptatum repudiandae assumenda exercitationem earum laboriosam, cumque molestias tenetur et corrupti praesentium.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, incidunt. Sapiente, nulla! Nisi, voluptate fuga numquam ipsum necessitatibus est incidunt magnam quas atque dicta sapiente sequi rem veniam laborum similique.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem, dolore amet reiciendis, laudantium itaque magni eum nam doloribus ab similique totam beatae, esse et? Porro vero deserunt nemo quidem in!
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum esse maxime unde architecto, voluptatum reiciendis assumenda illum! Earum provident voluptatibus quos cumque quaerat repellat corrupti beatae! Laborum molestias aperiam temporibus.
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta beatae ut dolor mollitia distinctio, soluta, nobis rerum, at natus eveniet tempore pariatur labore ullam adipisci tempora! Reprehenderit aliquam ut facilis.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae at, tenetur excepturi ducimus aliquid vitae, laudantium repellendus placeat, doloremque ipsa dolores facilis commodi ipsum rem adipisci. Corrupti illum voluptates culpa?
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam voluptatem eveniet odit accusantium culpa modi earum iste perferendis? Repellat esse est consequuntur dolores, inventore quasi deleniti error quas tenetur. Architecto!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi illum laboriosam, cupiditate fugiat eaque porro, iure aliquid labore mollitia earum, quos necessitatibus ex numquam nostrum. Dolores facere aut porro aperiam.
+
+<h2 id="history">Minha história</h2>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate obcaecati rem nam qui quam, tempora libero dolores nesciunt perferendis dignissimos doloremque dicta dolore sequi consequuntur, temporibus, commodi sit optio.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam sint, possimus rem, enim temporibus error fugit labore ipsum itaque sequi delectus maxime maiores, ratione sit aperiam harum qui voluptatem necessitatibus?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum velit omnis quas. Maiores officiis, aperiam reprehenderit placeat nam odio distinctio maxime quos, optio numquam voluptates deserunt, debitis ipsum quae ducimus?
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse, dignissimos corrupti voluptates architecto consequuntur commodi, unde ipsum officia, ipsa quaerat alias voluptatem perferendis eveniet sequi fugit? Quo, quod similique.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed debitis quasi aliquam repellat nulla neque! Enim quas delectus nesciunt provident nisi odio, ut officiis corporis exercitationem culpa consequuntur explicabo rerum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maiores repudiandae nobis. Nostrum amet et rerum dolor explicabo delectus fugiat exercitationem quas, impedit totam qui labore odio deserunt inventore in.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, quae cum? Distinctio nemo vero molestiae sit ipsam placeat error, qui quae delectus magni porro, cupiditate iure, veniam nulla in totam.
+
+
+<h2 id="work">Trabalho</h2>
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquam amet id ducimus, vero suscipit quaerat eum delectus totam itaque, perferendis eligendi nihil consectetur odit atque placeat ullam deleniti rerum aspernatur.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi aperiam magni temporibus perferendis ab nostrum mollitia quod quo rerum inventore totam at iusto, ad amet quas debitis, reprehenderit voluptatum asperiores!
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Error voluptate obcaecati rem nam qui quam, tempora libero dolores nesciunt perferendis dignissimos doloremque dicta dolore sequi consequuntur, temporibus, commodi sit optio.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam sint, possimus rem, enim temporibus error fugit labore ipsum itaque sequi delectus maxime maiores, ratione sit aperiam harum qui voluptatem necessitatibus?
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum velit omnis quas. Maiores officiis, aperiam reprehenderit placeat nam odio distinctio maxime quos, optio numquam voluptates deserunt, debitis ipsum quae ducimus?
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos esse, dignissimos corrupti voluptates architecto consequuntur commodi, unde ipsum officia, ipsa quaerat alias voluptatem perferendis eveniet sequi fugit? Quo, quod similique.
+Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed debitis quasi aliquam repellat nulla neque! Enim quas delectus nesciunt provident nisi odio, ut officiis corporis exercitationem culpa consequuntur explicabo rerum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis maiores repudiandae nobis. Nostrum amet et rerum dolor explicabo delectus fugiat exercitationem quas, impedit totam qui labore odio deserunt inventore in.
+Lorem
+
+-->
+
+<!--
+
+    -- Aula 18 --
+
+    Conteúdo do HyperLink
+
+    - Pode ser qualquer coisa
+
+        <a href="https://google.com"> <h1>Google</h1>
+<p>Outra coisa também posso</p>
+
+<img src="https://source.unsplash.com/random" alt="Oque aparece caso der errado"></a>
+-->
+
+<!--
+
+    -- Aula 19 --
+
+    URLs e Caminhos dos Arquivos
+
+    - Uniform Resource Locator
+        - https://rocketseat.com.br
+        - Um texto que localiza onde algo está na web
+    - URLs Usam caminhos para encontrar arquivos.
+
+    - Caminho dos Arquivos
+        - Onde, no explorador de arquivos, um recurso está localizado
+        <a href="anathtml.html">A outra pág </a>
+-->
+
+<!--
+
+    -- Aula 20 --
+
+    Navegando pelos Diretórios
+
+    - Mesmo diretório
+    - Entrando em diretórios
+    - Saindo de Diretórios
+    - Diretório Raiz (root ou pai)
+
+    ../    →   Para sair de um Diretório
+
+    ./   →  Para acessar o diretório Raiz
+
+    /Pasta01/Exemplo01   →   Para navegar pelos diretórios
+
+
+    <a href="nothing.html">Mesmo Diretório</a>
+    <br>
+    <a href="../../Subpasta/vish.html">Outro diretório</a>
+    <br>
+    <a href="../../anathtml.html">Saindo de um diretório</a>
+    <br>
+    <a href="./nothing.html">Pasta Raiz</a>
+
+
+-->
+
+<!--
+
+    -- Aula 21 --
+
+    URLs Absolutas vs Relativas
+
+    - Absoluto
+        - Inclui Protocolos e Dominíos
+        - https://www.rocketseat.com.br/projeto/index.html
+        - Sempre apontará para o mesmo local pois é absoluto.
+
+    - Relativo
+        - Relativo a página aberta no momento
+        - Apontará para lugares diferentes.
+
+        <a href="google.com">Relativo: Ir para o google</a>
+        <a href="https://google.com">Absoluto: Ir para o google</a>
+
+-->
+
+<!--
+
+    -- Aula 22 --
+
+    <table>
+
+        Prós
+        - Visualização de dados via Linhas e Colunas
+        - Boa acessibilidade para leitura de dados
+
+        Contras
+        - Pouco flexível
+        - Precisa de estilização para melhor visualização
+
+        Não usar
+        - Para criar o seu layout
+
+
+-->
+
+<!--
+
+    -- Aula 23 --
+
+    <tr> → Table Row → Linha da tabela
+    <th> → Table Head → Cabeçalho
+    <td> → Table Description → Descrição 
+
+
+<table>
+    <tr>
+        <th>Nome</th>
+        <th>Idade</th>
+        <th>Cidade</th>
+    </tr>
+    <tr>
+        <td>Thomás</td>
+        <td>19</td>
+        <td>Três Pontas</td>
+    </tr>
+    <tr>
+        <td>Thobyas</td>
+        <td>29</td>
+        <td>Três Pontas</td>
+    </tr>
+    <tr>
+        <td>Nonato</td>
+        <td>20</td>
+        <td>Varginha</td>
+    </tr>
+
+</table>
+
+-->
+
+<!-- 
+
+    -- Aula 24 --
+
+    Organizando Tabelas
+
+<table>
+
+    <caption>Pessoas Por Idade</caption>
+
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Cidade</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Thomás</td>
+            <td>19</td>
+            <td>Três Pontas</td>
+        </tr>
+        <tr>
+            <td>Thobyas</td>
+            <td>29</td>
+            <td>Três Pontas</td>
+        </tr>
+        <tr>
+            <td>Nonato</td>
+            <td>20</td>
+            <td>Varginha</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td>Total:</td>
+            <td>3 Pessoas</td>
+        </tr>
+    </tfoot>
+    
+
+</table>
+-->
+
+<!--
+    
+    -- Aula 25 --
+
+    2 Lojas
+        - Quantos produtos foram produzidos,quantos
+        produtos foram vendidos e agrupados por nomes
+        dos produtos
+
+
+        EXEMPLO  01
+
+        <table>
+
+    <caption>Produzidos x Vendidos por Loja</caption>
+
+            <colgroup>
+                <col >
+                <col span="2" style="background-color: red;">
+                <col span="2" style="background-color: blue;">
+            </colgroup>
+
+             
+
+    <thead>
+        <tr>
+            <th rowspan="2"></th>
+            <th colspan="2" scope="colgroup">Magalu</th>
+            <th colspan="2" scope="colgroup">Edmil</th>
+        </tr>
+
+        <tr>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+            <th scope="col">Produzidos</th>
+            <th scope="col">Vendidos</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <th scope="row">Geladeira</th>
+            <td>20</td>
+            <td>20</td>
+            <td>50</td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <th scope="row">Fogão</th>
+            <td>50</td>
+            <td>45</td>
+            <td>20</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+
+
+</table>
+
+
+        EXEMPLO  02
+
+    <table>
+
+    <caption style="background-color: blueviolet; color: black;" >Produzidos x Vendidos</caption>
+
+            <colgroup>
+            
+            <col span="2" style="background-color: green;">
+            <col style="background-color: brown;"> 
+            <col style="background-color: chocolate;">
+            
+            </colgroup>
+
+    <tr>
+        <th colspan="2"></th>
+        <th scope="col">Geladeira</th>
+        <th scope="col">Fogão</th>
+    </tr>
+
+    <tr>
+        <th rowspan="2" scope="rowgroup">Magalu</th>
+        <td >Produzidos</td>
+        <td >52</td>
+        <td >20</td>
+    </tr>
+    <tr>
+        <td >Vendidos</td>
+        <td >45</td>
+        <td >33</td>
+    </tr>
+
+    <tr>
+        <th rowspan="2" scope="rowgroup">Edmil</th>
+        <td >Produzidos</td>
+        <td >10</td>
+        <td >9</td>
+    </tr>
+    <tr>
+        <td>Vendidos</td>
+        <td>20</td>
+        <td>19</td>
+</table>
+-->
+
+<!--
+
+    -- Aula 26 --
+
+    <meta>
+        atributos
+         - charset
+         - name
+         - content
+
+
+
+    <head>
+
+        <meta charset="UTF-8">  → codificação de caracteres especiais
+
+        Portabilidade para dispositivos móveis
+                        ↓
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+-->
+
+<!--
+
+
+    -- Aula 27 --
+
+    Link para ícones personalizados
+
+
+    favicon básico
+    <link rel="icon" href="/icon/icon-48x48.png?v=cfca98652144ccaf7889745635123casfgh"/>
+-->
+
+<!--
+
+    -- Aula 28 --
+
+    Alguns atributos do <meta>
+
+    - charset
+    - viewport
+    - author
+    - description
+    - robots
+
+    <head>
+
+        <= SEO → Search Engine Optimization (Otimização de motor de Busca = google) =>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mayk brito">
+    <meta name="description" content="Um web-pág para iniciantes HTML">
+    <meta name="robots" content="index, follow">
+
+</head>
+-->
+
+<!--
+
+    -- Aula 29 --
+
+    <meta> para redes sociais
+
+    <= OpenGraph: Facebook =>
+
+    <head>
+
+    <meta property="og:image" content="https://cdn-iamges-1.com/max/92/1*Tkasfjpgasdk468743156465@2.jpeg">
+    <meta property="og:description" content="Aqui um texto para ser mostrado com a foto compartilhada">
+    <meta property="og:title" content="Um site da RocketSeat">
+
+
+    <= Twitter =>
+    <meta name="twitter:title" content="RocketSeat">
+
+</head>
+-->
+
+
+
+
+
+
+
+
